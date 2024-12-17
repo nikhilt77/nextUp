@@ -1,10 +1,10 @@
-# **NextUp**  
-**NextUp** is a simple and efficient To-Do List project built using **HTML**, **CSS**, and **JavaScript**. It allows you to keep track of your tasks, stay organized, and boost productivity.
+# **nextUp**  
+**nextUp** is a simple and efficient To-Do List project built using **HTML**, **CSS**, and **JavaScript**. It allows you to keep track of your tasks, stay organized, and boost productivity.
 
 ---
 
 ## **Overview**  
-NextUp is designed to help you manage your tasks with ease. Whether it’s daily chores, work assignments, or personal goals, NextUp ensures you never miss a task. The intuitive interface allows users to effortlessly **add**, **edit**, **delete**, or **mark tasks as completed**.
+nextUp is designed to help you manage your tasks with ease. Whether it’s daily chores, work assignments, or personal goals, nextUp ensures you never miss a task. The intuitive interface allows users to effortlessly **add**, **edit**, **delete**, or **mark tasks as completed**.
 
 ---
 
@@ -42,7 +42,7 @@ NextUp is designed to help you manage your tasks with ease. Whether it’s daily
 ---
 
 ## **Future Improvements**  
-Some potential enhancements for NextUp include:  
+Some potential enhancements for nextUp include:  
 - Adding task due dates.  
 - Categorizing tasks with priority labels.  
 - Persistent task storage using **localStorage** or a backend.  
@@ -51,8 +51,8 @@ Some potential enhancements for NextUp include:
 ---
 
 ## **Contributions**  
-Contributions are welcome! If you'd like to improve NextUp or add features, feel free to fork this project and submit a pull request.  
+Contributions are welcome! If you'd like to improve nextUp or add features, feel free to fork this project and submit a pull request.  
 
 ---
 
-Stay organized with **NextUp**—your simple yet powerful task manager.
+Stay organized with **nextUp**—your simple yet powerful task manager.
