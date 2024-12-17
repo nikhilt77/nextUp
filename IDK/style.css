@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #000430;
+    --secondaryBackground: #171c48;
+    --text: #fff;
+    --purple: #828dff;
+    --teal: #24feee;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background);
+}
+.stats {
+    display: flex;
+    max-width: 500px;
+    flex-direction: row;
+    margin-bottom: 20px;
+    border: 5px solid var(--purple);
+    border-radius: 20px;
+    gap: 20px;
+}
+.stats h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    padding: 10px;
+    margin-left: 20px;
+}
+.statNumbers {
+    display: flex;
+    margin: 60px 20px 30px 100px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--secondaryBackground);
+    color: var(--text);
+    gap: 20px;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+#progressBar {
+    width: 100%;
+    height: 10px;
+    background: var(--purple);
+    border-radius: 5px;
+    margin: 20px;
+    max-width: 500px;
+}
+#progress {
+    display: flex;
+    flex-direction: row;
+    height: 10px;
+    max-width: 500px;
+    background: var(--teal);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+#numbers {
+    dispaly: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    font-weight: bold;
+}
+form {
+    margin-top: 60px;
+}
+input {
+    width: 400px;
+    height: 40px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+input:hover {
+    border: 2px solid black;
+}
+button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #828dff;
+    border-radius: 100px;
+    background: var(--purple);
+    color: var(--text);
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    outline: none;
+}
+button:hover {
+    background: black;
+}
+
+#taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    color: var(--text);
+}
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text);
+    border-radius: 10px;
+}
+.task input {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+.taskListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--secondaryBackground);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.taskListItem:hover {
+    background: #1e2a78;
+}
+.taskListItem img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+.task.completed {
+    text-decoration: #24feee;
+    color: var(--teal);
+}
+
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+    .statNumbers {
+        margin: 20px;
+    }
+    #progressBar {
+        margin: 20px;
+    }
+    #numbers {
+        font-size: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input {
+        width: 300px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+    }
+    #taskList {
+        margin-top: 20px;
+    }
+    .taskListItem {
+        padding: 5px;
+    }
+    .taskListItem img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        flex-direction: column;
+    }
+    .statNumbers {
+        margin: 20px;
+    }
+    #progressBar {
+        margin: 20px;
+    }
+    #numbers {
+        font-size: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input {
+        width: 200px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+    }
+    #taskList {
+        margin-top: 20px;
+    }
+    .taskListItem {
+        padding: 5px;
+    }
+    .taskListItem img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .stats {
+        flex-direction: column;
+    }
+    .statNumbers {
+        margin: 20px;
+    }
+    #progressBar {
+        margin: 20px;
+    }
+    #numbers {
+        font-size: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input {
+        width: 150px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+    }
+    #taskList {
+        margin-top: 20px;
+    }
+    .taskListItem {
+        padding: 5px;
+    }
+    .taskListItem img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 280px) {
+    .stats {
+        flex-direction: column;
+    }
+    .statNumbers {
+        margin: 20px;
+    }
+    #progressBar {
+        margin: 20px;
+    }
+    #numbers {
+        font-size: 20px;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input {
+        width: 100px;
+    }
+    button {
+        width: 30px;
+        height: 30px;
+    }
+    #taskList {
+        margin-top: 20px;
+    }
+    .taskListItem {
+        padding: 5px;
+    }
+    .taskListItem img {
+        width: 20px;
+        height: 20px;
+    }
+}

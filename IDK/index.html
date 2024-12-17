@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>nextUp</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="stats">
+                <div class="details">
+                    <h1>nextUp</h1>
+                    <p>Keep it up</p>
+                    <div id="progressBar">
+                        <div id="progress"></div>
+                    </div>
+                </div>
+                <div class="statNumbers">
+                    <p id="numbers">0|0</p>
+                </div>
+            </div>
+            <form>
+                <input id="taskInput" type="text" placeholder="Add a task..." />
+                <button id="taskSubmit" type="submit">+</button>
+            </form>
+            <ul id="taskList"></ul>
+        </div>
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    </body>
+</html>
